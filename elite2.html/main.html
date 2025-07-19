@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #00ffcc;
+        }
+        section {
+            padding: 20px;
+        }
+        hr {
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+
+<!-- ✅ Navigation -->
+<header>
+    <nav>
+        <ul>
+            <li><a href="#favourites">Favourites</a></li>
+            <li><a href="#tables">Tables</a></li>
+            <li><a href="#forms">Forms</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ✅ Section: Favourites -->
+<section id="favourites">
+    <center><h1>My Top Online Destinations & Inspirations</h1></center>
+    <p>Favourite Website:</p>
+    <a href="https://www.instagram.com/anirudhofficial/?hl=en" target="_blank">Visit Instagram</a>
+    <hr>
+    <p>Favourite Image:</p>
+    <img src="amazon.jpg" alt="Amazon Image" onerror="src='https://placehold.co/600x400';" width="300">
+    <hr>
+    <p>Favourite Car Video:</p>
+    <video controls poster="ani.jpg" width="400">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <hr>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/viW44cUfxCE" frameborder="0" allowfullscreen></iframe>
+    <hr>
+    <ul>
+        <li>House</li>
+        <li>Cars</li>
+        <li>Lands</li>
+    </ul>
+    <hr>
+    <center><h3>Favourite Games</h3></center>
+    <ol>
+        <li>Cricket</li>
+        <li>Handball</li>
+        <li>Carrom</li>
+    </ol>
+</section>
+
+<hr>
+
+<!-- ✅ Section: Tables -->
+<section id="tables">
+    <h3>Student Performance</h3>
+    <table border="1">
+        <thead>
+            <tr><th>Student</th><th>Marks</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Nisha</td><td>50</td></tr>
+            <tr><td>Deepan</td><td>100</td></tr>
+            <tr><td>Akash</td><td>99</td></tr>
+            <tr><td>Gowtham</td><td>90</td></tr>
+        </tbody>
+    </table>
+
+    <hr>
+    <h3>Player Performance</h3>
+    <table border="1">
+        <thead>
+            <tr><th>Player</th><th>Matches</th><th>Runs</th><th>Rank</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Gan</td><td>6</td><td>677</td><td>1</td></tr>
+            <tr><td>Deepan</td><td>6</td><td>432</td><td>2</td></tr>
+            <tr><td>Gowtham</td><td>5</td><td>399</td><td>3</td></tr>
+            <tr><td colspan="3">Best Player Name</td><td>Gan</td></tr>
+        </tbody>
+    </table>
+
+    <hr>
+    <h3>Our Service Plans</h3>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+            <tr><th>Pricing Plan</th><th>Features</th><th>Monthly Price</th><th>Annual Price</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Basic</td>
+                <td>✔ 5 Projects<br>✔ 10 GB Storage<br>✔ Email Support</td>
+                <td>$10</td>
+                <td>$120</td>
+            </tr>
+            <tr>
+                <td>Pro</td>
+                <td>✔ 50 Projects<br>✔ 100 GB Storage<br>✔ Priority Support</td>
+                <td>$30</td>
+                <td>$360</td>
+            </tr>
+            <tr>
+                <td>Enterprise</td>
+                <td>✔ Unlimited Projects<br>✔ 1 TB Storage<br>✔ Dedicated Support</td>
+                <td>$100</td>
+                <td>$1,200</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<hr>
+
+<!-- ✅ Section: Forms -->
+<section id="forms">
+    <h3>Google Search</h3>
+    <form action="https://www.google.com/search" method="get">
+        <input type="text" name="q" placeholder="Search..." value="search...">
+        <button type="submit">Search</button>
+    </form>
+
+    <hr>
+    <h3>Newsletter & Preferences</h3>
+    <form>
+        <input type="checkbox" id="subscribe" name="subscribe">
+        <label for="subscribe">Subscribe to newsletter</label><br><br>
+
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br><br>
+
+        <label for="country">Select your country:</label>
+        <select name="country" id="country">
+            <option value="India">India</option>
+            <option value="UK">UK</option>
+            <option value="USA">USA</option>
+        </select>
+    </form>
+
+    <hr>
+    <h3>User Registration</h3>
+    <form>
+        <table>
+            <tr><td><label for="fullname">Full Name:</label></td><td><input type="text" id="fullname" name="fullname"></td></tr>
+            <tr><td>Email:</td><td><input type="email" name="email"></td></tr>
+            <tr><td>Password:</td><td><input type="password" name="password"></td></tr>
+            <tr><td>Confirm Password:</td><td><input type="password" name="confirm_password"></td></tr>
+            <tr>
+                <td>Account Type:</td>
+                <td>
+                    <input type="radio" name="account_type" value="Standard">Standard
+                    <input type="radio" name="account_type" value="Premium">Premium
+                    <input type="radio" name="account_type" value="Admin">Admin
+                </td>
+            </tr>
+            <tr><td>Notes:</td><td><textarea placeholder="Enter your notes"></textarea></td></tr>
+        </table>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+</body>
+</html>
